@@ -2,7 +2,7 @@
 
 This project implements a deep learning pipeline that transforms 3D-rendered animation frames into anime-style 2D frames while maintaining **temporal consistency** and **stylistic coherence**. The method uses an **8-channel input representation** (RGB, depth map, edge map, prior blurred frame) and a two-stage training strategy involving **perceptual pretraining** and **CycleGAN-based unpaired adaptation**.
 
-> 📄 For a detailed explanation of the approach and motivations, please see:
+> For a detailed explanation of the approach and motivations, please see:
 > https://github.com/CDFire/UnpairedStyleTransfer/blob/main/Unpaired_Style_Transfer_Overview.pdf
 
 ## Sample Output
