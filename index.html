@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Cole Feuer | Unpaired Style Transfer Research</title>
-  <meta name="description" content="Cole Feuer's official project page for unpaired style transfer research using anime-style diffusion and GANs for 3D to 2D animation." />
-  <meta name="keywords" content="Cole Feuer, AI, machine learning, style transfer, anime diffusion, GANs, research, 3D to 2D animation" />
+  <title>Cole Feuer | Unpaired Style Transfer from 3D Renders to Anime</title>
+  <meta name="description" content="Official project page for Cole Feuer's research on temporally consistent unpaired style transfer from 3D renders to anime using multi-channel inputs and GAN-based domain adaptation." />
+  <meta name="keywords" content="Cole Feuer, style transfer, anime, GANs, diffusion, deep learning, 3D to 2D animation, unpaired training" />
   <meta name="author" content="Cole Feuer" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://cdfire.github.io/UnpairedStyleTransfer/" />
 
   <!-- Open Graph for better previews on social media -->
-  <meta property="og:title" content="Cole Feuer | Unpaired Style Transfer Research" />
-  <meta property="og:description" content="Explore Cole Feuer's AI research in unpaired style transfer for 3D to anime-style 2D animation." />
+  <meta property="og:title" content="Cole Feuer | Unpaired Style Transfer from 3D Renders to Anime" />
+  <meta property="og:description" content="Explore Cole Feuer's research using GANs and perceptual learning for anime-style transfer of 3D-rendered animation frames." />
   <meta property="og:url" content="https://cdfire.github.io/UnpairedStyleTransfer/" />
   <meta property="og:type" content="website" />
 
@@ -39,33 +39,69 @@
 
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      max-width: 900px;
+      line-height: 1.6;
+      background: #f8f9fa;
+      color: #333;
     }
     h1 {
       font-size: 2rem;
-      color: #222;
+      margin-bottom: 0.5rem;
     }
-    p {
-      line-height: 1.6;
+    h2 {
+      margin-top: 2rem;
+      color: #444;
+    }
+    a {
+      color: #007acc;
+    }
+    section {
+      margin-top: 1.5rem;
     }
   </style>
 </head>
-
 <body>
-  <h1>Cole Feuer – Unpaired Style Transfer Research</h1>
-  <p>
-    This is the official GitHub Pages site for the research project by Cole Feuer: <strong>Unpaired Style Transfer from 3D Renders to Anime</strong>. This project explores how unpaired learning techniques using diffusion models and GANs can convert 3D-rendered animation frames into stylistically cohesive 2D anime frames, while maintaining temporal consistency across sequences.
-  </p>
+  <h1>Unpaired Style Transfer from 3D Renders to Anime</h1>
+  <p><strong>Author:</strong> Cole Feuer<br>
+     <strong>Institution:</strong> Rensselaer Polytechnic Institute<br>
+     <strong>Email:</strong> <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a></p>
 
-  <p>
-    You can access the full repository <a href="https://github.com/CDFire/UnpairedStyleTransfer" target="_blank">here on GitHub</a>.
-  </p>
+  <section>
+    <h2>Project Overview</h2>
+    <p>This project presents a novel deep learning pipeline for transforming 3D-rendered animation frames into anime-style visuals, with a focus on preserving both stylistic cohesion and temporal stability. By leveraging an unpaired training approach and a dual-stage model architecture, the method enables studios to automate the stylization process without requiring paired datasets or frame-by-frame annotations.</p>
+  </section>
 
-  <p>
-    For professional inquiries or collaborations, contact Cole at <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a>.
-  </p>
+  <section>
+    <h2>Technical Highlights</h2>
+    <ul>
+      <li>Uses an 8-channel input (RGB, depth, edge, blurred prior frame) to encode scene structure and motion context</li>
+      <li>Stage 1: Pretraining with perceptual, pixel-wise, and style losses using anime datasets</li>
+      <li>Stage 2: Unpaired adaptation with a CycleGAN-based architecture, including identity, adversarial, and cycle-consistency losses</li>
+      <li>Temporally consistent outputs that reduce flickering and visual instability across frames</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Research Goals</h2>
+    <p>The overarching goal is to build a scalable, efficient, and stylistically faithful conversion system that bridges 3D rendering pipelines with anime aesthetics. The method contributes novel techniques in multi-channel input processing and cycle-consistent domain adaptation for animation.</p>
+  </section>
+
+  <section>
+    <h2>Repository</h2>
+    <p>Explore the full codebase and documentation here: <a href="https://github.com/CDFire/UnpairedStyleTransfer" target="_blank">https://github.com/CDFire/UnpairedStyleTransfer</a></p>
+  </section>
+
+  <section>
+    <h2>Future Work</h2>
+    <p>Future work includes integrating explicit temporal loss (e.g., optical flow), conducting perceptual evaluations, and extending the framework to multiple anime styles with controllable outputs.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>For questions or collaborations, feel free to reach out via <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a>.</p>
+  </section>
 </body>
 </html>
