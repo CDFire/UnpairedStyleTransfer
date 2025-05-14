@@ -5,104 +5,131 @@
   <meta name="google-site-verification" content="MkwtrvT60O7yOBl4JlQn0E5SeSjz16QAOx0TF3f7_wM" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Cole Feuer | Unpaired Style Transfer from 3D Renders to Anime</title>
-  <meta name="description" content="Official project page for Cole Feuer's research on temporally consistent unpaired style transfer from 3D renders to anime using multi-channel inputs and GAN-based domain adaptation." />
-  <meta name="keywords" content="Cole Feuer, style transfer, anime, GANs, diffusion, deep learning, 3D to 2D animation, unpaired training" />
-  <meta name="author" content="Cole Feuer" />
+  <!-- Primary SEO Tags -->
+  <title>Cole Feuer | Unpaired Style Transfer from 3D Renders to Anime</title>
+  <meta name="description" content="Cole Feuer’s research on temporally consistent unpaired anime style transfer. Learn about the 8‑channel GAN workflow, results gallery, code, and publications." />
+  <meta name="keywords" content="Cole Feuer, unpaired style transfer, anime GAN, 3D to 2D, temporal consistency, multi-channel inputs" />
+  <meta name="author" content="Cole Feuer" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://cdfire.github.io/UnpairedStyleTransfer/" />
-
-  <!-- Open Graph for better previews on social media -->
-  <meta property="og:title" content="Cole Feuer | Unpaired Style Transfer from 3D Renders to Anime" />
-  <meta property="og:description" content="Explore Cole Feuer's research using GANs and perceptual learning for anime-style transfer of 3D-rendered animation frames." />
+  <link rel="author" href="https://orcid.org/0009-0000-3679-0380" />
+  <meta property="og:site_name" content="Cole Feuer Portfolio" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cole Feuer | Unpaired Style Transfer from 3D Renders to Anime" />
+  <meta property="og:description" content="Explore Cole Feuer’s novel GAN-based pipeline for unpaired 3D-to-anime style transfer with temporal coherence. View code, results, and future directions." />
   <meta property="og:url" content="https://cdfire.github.io/UnpairedStyleTransfer/" />
-  <meta property="og:type" content="website" />
 
-  <!-- Schema.org Person JSON-LD -->
+  <!-- BreadcrumbList Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Cole Feuer",
-    "url": "https://cdfire.github.io/UnpairedStyleTransfer/",
-    "sameAs": [
-      "https://github.com/CDFire",
-      "https://linkedin.com/in/colefeuer",
-      "mailto:coledfeuer@gmail.com"
-    ],
-    "jobTitle": "Machine Learning Researcher",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Rensselaer Polytechnic Institute"
-    }
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Linkedin",      "item": "https://www.linkedin.com/in/cole-feuer-6a4551165/"},
+      {"@type": "ListItem", "position": 2, "name": "Unpaired Style Transfer", "item": "https://cdfire.github.io/UnpairedStyleTransfer/"}
+    ]
+  }
+  </script>
+
+  <!-- Person & CreativeWork Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "#coleFeuer",
+        "name": "Cole Feuer",
+        "url": "https://linkedin.com/in/colefeuer",
+        "sameAs": [
+          "https://github.com/CDFire",
+          "https://orcid.org/0009-0000-3679-0380"
+        ],
+        "jobTitle": "Machine Learning Researcher",
+        "affiliation": {"@type":"CollegeOrUniversity","name":"Rensselaer Polytechnic Institute"}
+      },
+      {
+        "@type": "CreativeWork",
+        "headline": "Unpaired Style Transfer from 3D Renders to Anime",
+        "name": "Unpaired Style Transfer",
+        "author": {"@id": "#coleFeuer"},
+        "datePublished": "2025-04-15",
+        "url": "https://cdfire.github.io/UnpairedStyleTransfer/",
+        "description": "A GAN-based pipeline for converting 3D animation frames into stable, high-fidelity anime style using multi-channel inputs.",
+        "keywords": ["unpaired style transfer","anime GAN","temporal consistency"],
+        "publisher": {"@type":"Organization","name":"Cole Feuer Portfolio"}
+      }
+    ]
   }
   </script>
 
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      max-width: 900px;
-      line-height: 1.6;
-      background: #f8f9fa;
-      color: #333;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      margin-top: 2rem;
-      color: #444;
-    }
-    a {
-      color: #007acc;
-    }
-    section {
-      margin-top: 1.5rem;
-    }
+    /* Responsive, accessible styling */
+    body { font-family: system-ui, sans-serif; margin:0; padding:1rem; max-width:960px; background:#fafafa; color:#212121; line-height:1.6; }
+    nav.breadcrumb { font-size:.9em; margin-bottom:1rem; }
+    nav.breadcrumb a { color:#007acc; text-decoration:none; }
+    header h1 { font-size:2.5rem; margin:0; }
+    header p.lead { font-size:1.1rem; color:#555; }
+    section { margin-top:2rem; }
+    h2 { font-size:1.8rem; color:#333; border-bottom:2px solid #eaeaea; padding-bottom:.3rem; }
+    .gallery img { max-width:100%; border-radius:4px; margin:1rem 0; }
+    footer { margin-top:3rem; font-size:.9rem; color:#555; }
   </style>
 </head>
 <body>
-  <h1>Unpaired Style Transfer from 3D Renders to Anime</h1>
-  <p><strong>Author:</strong> Cole Feuer<br>
-     <strong>Institution:</strong> Rensselaer Polytechnic Institute<br>
-     <strong>Email:</strong> <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a></p>
+  <nav class="breadcrumb">
+    <a href="https://colefeuer.com/">Home</a> &raquo;
+    <a href="https://colefeuer.com/projects/">Projects</a> &raquo;
+    <span>Unpaired Style Transfer</span>
+  </nav>
 
-  <section>
-    <h2>Project Overview</h2>
-    <p>This project presents a novel deep learning pipeline for transforming 3D-rendered animation frames into anime-style visuals, with a focus on preserving both stylistic cohesion and temporal stability. By leveraging an unpaired training approach and a dual-stage model architecture, the method enables studios to automate the stylization process without requiring paired datasets or frame-by-frame annotations.</p>
+  <header>
+    <h1>Cole Feuer’s Unpaired Style Transfer</h1>
+    <p class="lead">Transforming 3D-rendered animation frames into temporally coherent anime style using a novel GAN pipeline.</p>
+  </header>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>This work from <strong>Cole Feuer</strong> presents a two-stage, unpaired approach: first a perceptual pretraining phase on anime datasets; then a CycleGAN-based domain adaptation using 8-channel inputs (RGB, depth, edges, blurred prior frames) to enforce visual and temporal fidelity without paired data. Ideal for studios seeking automated stylization at scale.</p>
   </section>
 
-  <section>
-    <h2>Technical Highlights</h2>
+  <section id="features">
+    <h2>Key Technical Features</h2>
     <ul>
-      <li>Uses an 8-channel input (RGB, depth, edge, blurred prior frame) to encode scene structure and motion context</li>
-      <li>Stage 1: Pretraining with perceptual, pixel-wise, and style losses using anime datasets</li>
-      <li>Stage 2: Unpaired adaptation with a CycleGAN-based architecture, including identity, adversarial, and cycle-consistency losses</li>
-      <li>Temporally consistent outputs that reduce flickering and visual instability across frames</li>
+      <li><strong>8-Channel Encoding:</strong> Combines scene structure (depth, edges) with motion context (prior frame) for stable outputs.</li>
+      <li><strong>GAN Adaptation:</strong> Dual discriminators with identity, adversarial, and cycle-consistency losses on unpaired data.</li>
+      <li><strong>Temporal Coherence:</strong> Minimizes frame-to-frame flicker via blurred prior-frame input and style loss.</li>
+      <li><strong>Performance:</strong> Real-time inference demo with TensorRT &amp; ONNX build.</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Research Goals</h2>
-    <p>The overarching goal is to build a scalable, efficient, and stylistically faithful conversion system that bridges 3D rendering pipelines with anime aesthetics. The method contributes novel techniques in multi-channel input processing and cycle-consistent domain adaptation for animation.</p>
+  <section id="results">
+    <h2>Results Gallery</h2>
+    <div class="gallery">
+      <img src="images/gallery/1_before.png" alt="3D render input frame by Cole Feuer" />
+      <img src="images/gallery/1_after.png" alt="Anime-style output frame by Cole Feuer" />
+      <p>Figure 1. Input vs. Output for a single frame; see full sequence in <a href="results.html">Results</a>.</p>
+    </div>
   </section>
 
-  <section>
-    <h2>Repository</h2>
-    <p>Explore the full codebase and documentation here: <a href="https://github.com/CDFire/UnpairedStyleTransfer" target="_blank">https://github.com/CDFire/UnpairedStyleTransfer</a></p>
+  <section id="code">
+    <h2>Code &amp; Documentation</h2>
+    <p>View the complete implementation, training scripts, and setup instructions on GitHub:</p>
+    <p><a href="https://github.com/CDFire/UnpairedStyleTransfer" target="_blank" rel="noopener">github.com/CDFire/UnpairedStyleTransfer</a></p>
   </section>
 
-  <section>
-    <h2>Future Work</h2>
-    <p>Future work includes integrating explicit temporal loss (e.g., optical flow), conducting perceptual evaluations, and extending the framework to multiple anime styles with controllable outputs.</p>
+  <section id="future">
+    <h2>Future Directions</h2>
+    <p>Planned enhancements include explicit optical-flow losses, multi-style conditional transfer, and user-driven style parameter controls. Feedback and collaborations welcomed.</p>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
-    <p>For questions or collaborations, feel free to reach out via <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a>.</p>
+    <p>Questions or collaborations? Reach out to <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a> or connect on <a href="https://linkedin.com/in/colefeuer" target="_blank" rel="noopener">LinkedIn</a>.</p>
   </section>
+
+  <footer>
+    <p>&copy; <script>document.write(new Date().getFullYear());</script> Cole Feuer. <a href="https://colefeuer.com/">colefeuer.com</a></p>
+  </footer>
 </body>
 </html>
